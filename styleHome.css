@@ -1,0 +1,191 @@
+body {
+  margin: 0;
+  background: linear-gradient(45deg, #116e47, #bbf067);
+  background-repeat: no-repeat;
+}
+.header {
+  height: 70px;
+  width: 100%;
+  display: flex;
+
+  /* background-color: yellow; */
+}
+
+button {
+  margin-left: 500px;
+  margin-top: 30px;
+  width: 100px;
+  height: 30px;
+  background-color: #bbf067;
+  border: 3px solid white;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 200px;
+  margin-top: 40px;
+  /* Aligns the elements horizontally */
+}
+
+.navbar ul li {
+  margin-right: 50px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: lightgray;
+}
+
+.navbar ul li a:hover {
+  color: white;
+  font-weight: 900;
+}
+
+.main {
+  height: 1500px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "r1 r1" "r2 r2" "r3 r3" "r4 r4";
+}
+
+.row1 {
+  grid-area: r1;
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: center;
+}
+.row2 {
+  grid-area: r2;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+}
+
+.row3 {
+  grid-area: r3;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: center;
+}
+
+.row4 {
+  grid-area: r4;
+  /* background-color: orange; */
+  display: flex;
+  justify-content: center;
+}
+
+.col1 {
+  background-color: antiquewhite;
+  height: 300px;
+  width: 500px;
+  margin-top: 30px;
+  margin-right: 60px;
+  overflow: auto;
+  white-space: pre-wrap;
+}
+
+.footer {
+  display: grid;
+  height: 300px;
+  width: 100%;
+  grid-template-columns: 500px 1fr;
+  grid-template-rows: 1fr 90px;
+  background-color: beige;
+  grid-template-areas:
+    "c1 d1"
+    "c1 d2";
+}
+
+.f1 {
+  grid-area: c1;
+  /* background-color: red; */
+}
+
+.f2 {
+  grid-area: d1;
+  /* background-color: purple; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "t1 t2 t3 t4";
+}
+
+.f3 {
+  grid-area: d2;
+  /* background-color: orange; */
+}
+
+.a1 {
+  grid-area: t1;
+  /* background-color: aliceblue; */
+}
+
+.a2 {
+  grid-area: t2;
+  /* backgr/ound-color: violet; */
+}
+
+.a3 {
+  grid-area: t3;
+  /* background-color: #bbf067; */
+}
+
+.a4 {
+  grid-area: t4;
+  /* background-color: aquamarine; */
+}
+
+.a1 ul {
+  list-style-type: none;
+  margin: 20px;
+  padding: 0;
+}
+
+.a1 ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.a2 ul {
+  list-style-type: none;
+  margin-top: 110px;
+  padding: 0;
+}
+
+.a2 ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.a3 ul {
+  list-style-type: none;
+  margin-top: 110px;
+  padding: 0;
+}
+
+.a3 ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.a4 ul {
+  list-style-type: none;
+  margin-top: 110px;
+  padding: 0;
+}
+
+.a4 ul li a {
+  text-decoration: none;
+  color: black;
+}
